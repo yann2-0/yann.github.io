@@ -1,0 +1,38 @@
+<svg width="129" height="129" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="avenant">
+<circle id="Ellipse 48" cx="40" cy="40" r="40" fill="url(#paint0_radial)"/>
+<g id="Calque 2" filter="url(#filter0_d)">
+<g id="Group">
+<path id="Vector" d="M30.5999 36.2885C21.5848 36.2885 14.2485 30.3918 14.2485 23.1428C14.2485 15.8967 21.5848 10 30.5999 10C39.6185 10 46.9548 15.8967 46.9548 23.1428C46.9548 30.3918 39.6185 36.2885 30.5999 36.2885ZM30.5999 11.4835C22.6035 11.4835 16.0941 16.7126 16.0941 23.1428C16.0941 29.573 22.5999 34.8022 30.5999 34.8022C38.5999 34.8022 45.1057 29.5702 45.1057 23.1428C45.1057 16.7155 38.5964 11.4835 30.5999 11.4835Z" fill="#232020" stroke="white" stroke-width="3" stroke-miterlimit="10"/>
+<path id="Vector_2" d="M39.118 63.5698H10.9228C10.4117 63.5698 10 63.2389 10 62.8281V51.6822C10 42.3764 19.4197 34.8051 30.9973 34.8051C38.9725 34.8051 46.1597 38.3625 49.7551 44.0909C49.9858 44.4561 49.8012 44.904 49.3469 45.0894C48.8891 45.2748 48.3354 45.1265 48.1083 44.7613C44.8288 39.5378 38.2733 36.2914 31.0009 36.2914C20.4419 36.2914 11.8527 43.1951 11.8527 51.6822V62.0863H39.1216C39.6327 62.0863 40.0444 62.4173 40.0444 62.8281C40.0408 63.236 39.6256 63.5698 39.118 63.5698Z" fill="#232020" stroke="white" stroke-width="3" stroke-miterlimit="10"/>
+</g>
+<g id="Group_2">
+<g id="Group_3">
+<path id="Vector_3" d="M53.8758 70C44.985 70 37.748 64.186 37.748 57.0398C37.748 49.8935 44.9814 44.0766 53.8758 44.0766C62.7667 44.0766 70 49.8906 70 57.0398C70.0036 64.186 62.7667 70 53.8758 70ZM53.8758 44.7813C45.4677 44.7813 38.6247 50.2815 38.6247 57.0398C38.6247 63.798 45.4677 69.2982 53.8758 69.2982C62.284 69.2982 69.1269 63.798 69.1269 57.0398C69.1269 50.2815 62.284 44.7813 53.8758 44.7813Z" fill="#232020" stroke="white" stroke-width="4" stroke-miterlimit="10"/>
+</g>
+</g>
+<g id="Calque 3">
+<g id="Group_4">
+<path id="Vector_4" d="M61.9964 57.6474H45.7089C45.1978 57.6474 44.7861 57.3165 44.7861 56.9057C44.7861 56.4949 45.1978 56.164 45.7089 56.164H61.9964C62.5075 56.164 62.9192 56.4949 62.9192 56.9057C62.9228 57.3165 62.5075 57.6474 61.9964 57.6474Z" fill="white"/>
+<path id="Vector_5" d="M53.8544 64.1946C53.3434 64.1946 52.9316 63.8636 52.9316 63.4528V50.3614C52.9316 49.9506 53.3434 49.6196 53.8544 49.6196C54.3655 49.6196 54.7772 49.9506 54.7772 50.3614V63.4528C54.7772 63.8608 54.3655 64.1946 53.8544 64.1946Z" fill="white"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_d" x="4.5" y="8.5" width="71.5" height="71.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+<radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(12.6667 67.3333) rotate(-40.6013) scale(76.8295)">
+<stop stop-color="#06DEFC"/>
+<stop offset="0.475958" stop-color="#06D1EC"/>
+<stop offset="1" stop-color="#06A3FC"/>
+</radialGradient>
+</defs>
+</svg>

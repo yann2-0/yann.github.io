@@ -1,0 +1,688 @@
+html, body, div, span, h1, h2, h3, p, a, em, img, ol, ul, li, fieldset,
+form, label, legend, table, tbody,
+tfoot, thead, tr, th, td,
+footer, header, menu, nav,
+section {
+	margin: 0;
+    padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+	}
+
+html {
+    box-sizing: border-box;
+    }
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/*************************************************************/
+/***********************barre navigation************************/
+/*************************************************************/
+
+nav{
+    /*background-color: black;*/
+    color: aliceblue;
+    height: 30px;
+    width: 100%;
+    display: inline-block;
+    /*justify-content: space-between;*/
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-bottom: 20px;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 30px;
+}
+nav ul li a {
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+    padding: 5px 20px 5px 20px;
+}
+nav ul li a:hover {
+    color: rgb(6,222,252);
+    text-shadow:
+    0 0 5px rgb(6, 163, 252),
+    0 0 10px rgb(6, 163, 252),
+    0 0 20px rgb(6, 163, 252),
+    0 0 40px rgb(6, 222, 252),
+    0 0 80px rgb(6, 222, 252),
+    0 0 90px rgb(6, 222, 252),
+    0 0 100px rgb(6, 222, 252),
+    0 0 150px rgb(6, 222, 252);
+    border-bottom: 1px solid rgb(6,222,252);
+    /*border-top: 1px solid rgb(6,222,252);*/
+    /*box-shadow: 0 0 15px -1px rgb(6,163,252), 
+    0 0 12px -1px rgb(6,222,252) inset;*/
+}
+.activeNav {
+    color: rgb(6,222,252);
+    text-shadow:
+    0 0 5px rgb(6, 163, 252),
+    0 0 10px rgb(6, 163, 252),
+    0 0 20px rgb(6, 163, 252),
+    0 0 40px rgb(255, 255, 255),
+    0 0 80px rgb(255, 255, 255);
+    
+    border-bottom: 1px solid rgb(6,222,252);
+    /*border-radius: 8px;
+    box-shadow: 0 0 15px -1px rgb(6,163,252), 
+    0 0 12px -1px rgb(6,222,252) inset;*/
+}
+#navBar{
+    /*background-color: black;*/
+    position: fixed;
+    /*display: none;*/
+    width: 100%;
+    z-index: 8;
+    transition: top 0.3s;
+}
+
+/************************************************************/
+/******************HAMBURGER MENU************************/
+/************************************************************/
+#hamburger, #hamburger-content{
+    display: inline;
+}
+#hamburger-button{
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 50px;
+    color: aliceblue;
+    padding: 0;
+    vertical-align: top;
+    line-height: 47px;
+    float: left;
+    margin-left: 32px;
+}
+#hamburger-overlay{
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,  .4);
+}
+#hamburger-sidebar{
+    display: none;
+    position: fixed;
+    width: 84%;
+    z-index: 1020;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(14, 13, 13);
+    transform: translateX(-100%);
+    transition: transform .2s ease-out;
+}
+#hamburger-sidebar li{
+    display: block;
+    margin-right: 0;
+}
+#hamburger-sidebar nav{
+    text-align: justify;
+    
+}
+#hamburger-sidebar-header{
+    background-color: rgb(28, 103, 243);
+    height: 128px;
+}
+#hamburger-sidebar-body li:before{
+    content: '      ';
+    display: inline-block;
+    vertical-align: middle;
+    width: 35px;
+    height: 24px;
+    margin-right: 16px;
+    margin-bottom: 14px;
+}
+#hamburger-sidebar-body li:first-child:before{
+    background-image: url(./images/svg/home1.svg);
+}
+#hamburger-sidebar-body li:nth-child(2):before{
+    background-image: url(./images/svg/suitcase1.svg);
+}
+#hamburger-sidebar-body li:nth-child(3):before{
+    background-image: url(./images/svg/user1.svg);
+}
+#hamburger-sidebar-body li:nth-child(4):before{
+    background-image: url(./images/svg/email1.svg);
+}
+
+@media screen and (max-width: 1024px){
+
+    #hamburger-content{
+        display: none;
+    }
+    #hamburger-button, 
+    .hamburger-activated{
+        display: block;
+    }
+    #hamburger-button{
+        position: fixed;
+        z-index: 2;
+    }
+    .hamburger-activated, #hamburger-sidebar{
+        transform: translateX(0);
+    }
+}
+
+/*************************************************************/
+/**************************HEADER BLOCK*********************/
+/*************************************************************/
+
+header{
+    /*background-color: red;*/
+    background-image: url(../css/images/fond.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+#globaleHeader{
+    /*background-color: ivory;*/
+    /*padding-top: 100px;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100vh;
+}
+#leftHeader{
+    /*background-color: rgb(14, 207, 14);*/
+    width: 50vw;
+    height: 50vh;
+    margin-top: 15%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#leftHeader h1{
+    display: none;
+    font-size: calc(56px + (52 - 36) * ((100vw - 1024px) / (1920 - 1024)));  
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+#leftHeader h1 span{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+    
+}
+.light{
+    text-shadow:
+    0 0 5px rgb(6, 163, 252),
+    0 0 10px rgb(6, 163, 252),
+    0 0 20px rgb(6, 163, 252),
+    0 0 40px rgb(6, 222, 252),
+    0 0 80px rgb(6, 222, 252),
+    0 0 90px rgb(6, 222, 252),
+    0 0 100px rgb(6, 222, 252),
+    0 0 150px rgb(6, 222, 252);
+}
+#leftHeader h2{
+    visibility: hidden;
+    font-size: calc(56px + (52 - 36) * ((100vw - 1024px) / (1920 - 1024)));  
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    height: 10vh;
+    color: rgb(6, 222, 252);
+}
+#leftHeader button{
+    display: none;
+    align-self: center;
+    font-size: calc(14px + (52 - 36) * ((100vw - 1024px) / (1920 - 1024)));  
+    background-color: inherit;
+    color: #fff;
+    padding: 20px;
+    border: 1px solid #fff ;
+    border-radius: 8px;
+    cursor: pointer;
+}
+#leftHeader button a {
+    color: #fff;
+}
+#leftHeader button a:hover {
+    color: rgb(6, 222, 252);
+}
+#leftHeader button:hover{
+    color: rgb(6,222,252);
+    text-shadow:
+    0 0 5px rgb(6, 163, 252),
+    0 0 10px rgb(6, 163, 252),
+    0 0 20px rgb(6, 163, 252),
+    0 0 40px rgb(6, 222, 252),
+    0 0 80px rgb(6, 222, 252),
+    0 0 90px rgb(6, 222, 252),
+    0 0 100px rgb(6, 222, 252),
+    0 0 150px rgb(6, 222, 252);
+    border: 1px solid rgb(6,222,252);
+    box-shadow: 0 0 15px -1px rgb(6,163,252), 
+    0 0 12px -1px rgb(6,222,252) inset;
+}
+#rightHeader{
+    background-color: rgba(8, 8, 8, 0);
+    width: 50vw;
+    height: 65vh;
+    margin-top: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#rightHeader img{
+    display: none;
+}
+.icon-scroll,
+.icon-scroll:before{
+    position: absolute;
+    left: 50%;
+}
+.icon-scroll{
+    display: none;
+    width: 40px;
+    height: 70px;
+    margin-left: -20px;
+    top: 90%;
+    margin-top: -35px;
+    box-shadow: inset 0 0 0 1px #fff;
+    border-radius: 25px;
+}
+.icon-scroll:before{
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    margin-left: -4px;
+    top: 8px;
+    border-radius: 4px;
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: scroll;
+    -webkit-animation-name: scroll;
+}
+
+/************************************************************/
+/*******************BLOCK SKILLS***************************/
+/************************************************************/
+#section1{
+    background-image: url(../css/images/image.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+/************************************************************/
+/********************HARD SKILLS***************************/
+/************************************************************/
+
+#hardSkills{
+    /*background-color: rgba(0, 0, 0, 0.287);*/
+    height: 85vh;
+    margin: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-top: 2vh;
+}
+
+#techno{
+    /*background-color: aqua;*/
+    height: 56vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 5vh;
+}
+.flip-box {
+    background-color: rgba(255, 255, 255, 0);
+    width: 27vw;
+    height: 55vh;
+    perspective: 1000px;
+} 
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}  
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+} 
+.flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+} 
+.flip-box-front {
+    /*background-color: #fff;*/
+    background-color: inherit;
+    color: black;
+    border-radius: 10px 10px 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25),
+                        -5px -5px 10px rgb(244, 246, 248);
+}
+.flip-box-front h4{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: normal;
+    margin-top: 5vh;
+    font-size: 2em;
+}  
+.flip-box-back {
+    background-color: #fff;
+    color: black;
+    border-radius: 10px 10px 10px;
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.25),
+                        5px 5px 10px rgb(244, 246, 248);
+    transform: rotateY(180deg);
+}
+.flip-box-back h4{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: normal;
+    margin-top: 5vh;
+    font-size: 2em;
+}
+.techno-icon{
+    height: 37vh;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-left: 3.3vw;
+    padding-top: 2vh;
+}
+
+#capacity{
+    /*background-color: rgb(255, 136, 0);*/
+    height: 20vh;
+    /*display: flex;
+    flex-direction: row;
+    justify-content: space-around;*/
+}
+#capacity-icon1-glob{
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.capacity-icon1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+}
+.capacity-icon1 p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(29px + (52 - 36) * ((100vw - 1024px) / (1920 - 1024)));;
+    text-align: center;
+}
+#capacity-icon2-glob{
+    display: none;
+    height: 20vh;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.capacity-icon2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.capacity-icon2 p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(29px + (52 - 36) * ((100vw - 1024px) / (1920 - 1024)));;
+    text-align: center;
+}
+/************************************************************/
+/**********************SOFT SKILLS*************************/
+/***********************************************************/
+
+#softSkills{
+    /*background-color: bisque;*/
+    height: 85vh;
+    margin: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-top: 2vh;
+}
+.scrollable-content{
+    /*background-color: bisque;*/
+    height: 90vh;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    margin: 1vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-top: 1vh;
+}
+#personality{
+    /*background-color: #fff;*/
+    background-color: inherit;
+    height: 57vh;
+    margin-bottom: 2vh;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25),
+                        -5px -5px 10px rgb(244, 246, 248);
+    text-align: center;
+}
+#personality h4{
+    font-size: 2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: normal;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+}
+#personality-in{
+    /*background-color: red;*/
+    height: 45vh;
+    padding-top: 3.3vh;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+#hobbys{
+    /*background-color: #fff;*/
+    background-color: inherit;
+    height: 29vh;
+    border-radius: 10px;
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.25),
+                        5px 5px 10px rgb(244, 246, 248);
+    text-align: center;
+}
+#hobbys h4{
+    font-size: 2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: normal;
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+}
+#hobbys-in{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.soft-skills-icon p{
+    font-size: 2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/******************************************************************************/
+/***************************PROFIL********************************************/
+/******************************************************************************/
+
+#profil{
+    background-image: url(../css/images/fond_profil.jpg);
+    background-size: cover;
+    height: 100%;
+}
+#profil-in{
+    /*background-color: blue;*/
+    padding-top: 8vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#profil-left{
+    /*background-color: red;*/
+    color: #fff;
+    width: 48vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+}
+#profil-right{
+    /*background-color: aqua;*/
+    color: #fff;
+    width: 48vw;
+    height: 90vh;
+}
+#profil-right h2{
+    margin-top: 11vh;
+    font-size: calc(56px + (52 - 36) * ((100vw - 1024px) / (1920 - 1024)));
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(6,222,252);
+    text-shadow:
+    0 0 5px rgb(6, 163, 252),
+    0 0 10px rgb(6, 163, 252),
+    0 0 20px rgb(6, 163, 252),
+    0 0 40px rgb(6, 222, 252),
+    0 0 80px rgb(6, 222, 252),
+    0 0 90px rgb(6, 222, 252),
+    0 0 100px rgb(6, 222, 252),
+    0 0 150px rgb(6, 222, 252);
+    margin-bottom: 1vh;
+}
+#profil-right p{
+    width: 40vw;
+    text-align: justify;
+    font-size: calc(21px + (52 - 36) * ((100vw - 1024px) / (1920 - 1024)));
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*******************************************************************************/
+/**********************CONTACT**********************************************/
+/*****************************************************************************/
+
+#contact{
+    background-image: url(../css/images/image.jpg);
+    background-size: cover;
+    height: 100%;
+}
+#contact-block{
+    height: 100vh;
+    /*background-color: bisque;*/
+    padding-top: 13vh;
+    display: flex;
+    flex-direction: column;
+}
+#form{
+    background-color: inherit;
+    /*background-image: linear-gradient(to right, rgba(4, 94, 240, 0.411), rgba(255, 255, 255, 0.589));*/
+    width: 60vw;
+    height: 75vh;
+    margin-bottom: 8vh;
+    align-self: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25),
+                        -5px -5px 10px rgb(244, 246, 248);
+}
+#form h2{
+    font-size: calc(56px + (52 - 36) * ((100vw - 1024px) / (1920 - 1024)));
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin-top: 2vh;
+    background: -webkit-linear-gradient(rgb(6,163,252), rgb(6,222,252));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /*text-shadow:
+    0 0 5px rgb(181, 222, 245),
+    0 0 10px rgb(202, 226, 240),
+    0 0 20px rgb(245, 246, 247),
+    0 0 40px rgb(250, 251, 252);*/
+    font-weight: bold;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    margin-top: 5vh;
+}
+input[type=text],
+input[type=email]{
+    width: 50vw;
+    height: 8vh;
+    border-radius: 10px;
+    align-self: center;
+    margin-bottom: 2vh;
+    border: 1px solid #fff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25),
+                        -5px -5px 10px rgb(244, 246, 248);
+    padding-left: 2vw;
+    color: black;
+    font-size: 1em;
+}
+textarea{
+    width: 50vw;
+    height: 25vh;
+    border-radius: 10px;
+    align-self: center;
+    margin-bottom: 5vh;
+    border: 1px solid #fff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25),
+                        -5px -5px 10px rgb(244, 246, 248);
+    padding-left: 2vw;
+    padding-top: 2vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5em;
+    color: rgba(5, 5, 5, 0.568);
+}
+input[type=submit]{
+    width: 15vw;
+    height: 5vh;
+    border-radius: 10px;
+    align-self: center;
+    margin-bottom: 5vh;
+    border: 1px solid rgba(255, 255, 255, 0);
+    background-image: linear-gradient(to right, rgb(6,163,252), rgb(6,222,252));
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25),
+                        -5px -5px 10px rgb(244,246,248);
+    color: #fff;
+    font-size: 2em;
+}
+footer{
+    background-color: rgb(0, 0, 0);
+    height: 5vh;
+    box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.25);
+}
+footer p{
+    color: rgba(245, 248, 248, 0.719);
+    /*text-shadow:
+    0 0 5px rgb(6, 163, 252),
+    0 0 10px rgb(6, 163, 252),
+    0 0 20px rgb(6, 163, 252),
+    0 0 40px rgb(6, 222, 252),
+    0 0 80px rgb(6, 222, 252);*/
+    text-align: center;
+    margin-top: 2vh;
+    font-size: 1em;
+}

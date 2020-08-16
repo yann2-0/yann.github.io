@@ -1,0 +1,201 @@
+
+/*************************************************************/
+/***************************** ONLOAD **********************/
+/************************************************************/
+
+.block_2out{
+    animation-name: block_2part;
+    animation-delay: 0s;
+    animation-duration: 3s;
+    animation-fill-mode: backwards;
+}
+.block_out{
+    animation-name: block_2part;
+    animation-delay: 4.5s;
+    animation-duration: 3s;
+    animation-fill-mode: backwards;
+}
+@keyframes block_2part{/*zoomOut*/
+    from {opacity: 0;}
+    50% {opacity: 0;transform: scale3d(0.3, 0.3, 0.3);}
+    to {opacity: 1;}
+}
+.block_1out {
+    animation-name: bounceInDown;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes bounceInDown {
+    from,60%,75%,90%,to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    0% {
+    opacity: 0;
+    transform: translate3d(0, -3000px, 0) scaleY(3);
+    }
+    60% {
+    opacity: 1;
+    transform: translate3d(0, 25px, 0) scaleY(0.9);
+    }
+    75% {
+    transform: translate3d(0, -10px, 0) scaleY(0.95);
+    }
+    90% {
+    transform: translate3d(0, 5px, 0) scaleY(0.985);
+    }
+    to {
+    transform: translate3d(0, 0, 0);
+    }
+}
+.block3_out {
+    animation-name: bounceInUp;
+    animation-delay: 7s;
+    animation-duration: 2s;
+    animation-fill-mode: backwards;
+}
+@keyframes bounceInUp {
+    from,60%,75%,90%,to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    from {
+    opacity: 0;
+    transform: translate3d(0, 3000px, 0) scaleY(5);
+    }
+
+    60% {
+    opacity: 1;
+    transform: translate3d(0, -20px, 0) scaleY(0.9);
+    }
+
+    75% {
+    transform: translate3d(0, 10px, 0) scaleY(0.95);
+    }
+
+    90% {
+    transform: translate3d(0, -5px, 0) scaleY(0.985);
+    }
+    to {
+    transform: translate3d(0, 0, 0);
+    }
+}
+
+/*************************************************************/
+/************************WRITING H2 ************************/
+/*************************************************************/
+
+/*lier main.js ligne158*/
+.typewrite > .wrap{
+    animation: blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes blinkTextCursor{
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
+}
+/*fin liaison js */
+
+/*************************************************************/
+/************************ SCROLL-ICON **********************/
+/************************************************************/
+
+@keyframes scroll{
+    0%{
+        opacity: 1;
+    } 
+    100%{
+        opacity: 0;
+        transform: translateY(46px)
+    }  
+}
+@-webkit-keyframes scroll{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        -webkit-transform: translateY(46px)
+    }  
+}
+
+/************************************************************/
+/*********************CAPACITY ICON***********************/
+/***********************************************************/
+
+.fadeInLeft {
+    animation-name: fadeInLeft;
+    animation-delay: 0s;
+    animation-duration: 2s;
+    animation-fill-mode: backwards;
+}
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translate3d(-2000px, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+.fadeOutRight {
+    animation-name: fadeOutRight;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeOutRight {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        transform: translate3d(-2000px, 0, 0);
+    }
+}
+@keyframes zoomOut {
+    from {
+    opacity: 1;
+    }
+    50% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+    }
+    to {
+    opacity: 0;
+    }
+}
+/*.fadeOutLeftBig {
+    animation-name: fadeOutLeftBig;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeOutLeftBig {
+    from {
+    opacity: 1;
+    }
+    to {
+    opacity: 0;
+    transform: translate3d(-2000px, 0, 0);
+    }
+}
+.fadeInRightBig {
+    animation-name: fadeInRightBig;
+    animation-delay: 0s;
+    animation-duration: 2s;
+    animation-fill-mode: backwards;
+}
+@keyframes fadeInRightBig {
+    from {
+    opacity: 0;
+    transform: translate3d(2000px, 0, 0);
+    }
+    to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    }
+}*/
+
+
+
+

@@ -1,0 +1,287 @@
+@media screen and (max-width: 1023px) and (orientation: landscape){
+
+/********************************************************************************/
+/****************************MENU HAMBURGER*********************************/
+/*******************************************************************************/
+
+    #hamburger-sidebar{
+        width: 50vw;
+    }
+    nav ul li{
+        margin-bottom: 3vh;
+    }
+    #hamburger-button{
+        margin-top: 5vh;
+    }
+    
+/********************************************************************************/
+/******************************ACCEUIL*****************************************/
+/*******************************************************************************/
+
+    #rightHeader{
+        margin-top: 12vh;
+    }
+    #rightHeader img{
+        width: 40vw;
+    }
+    #leftHeader{
+        margin-top: 12vh;
+        height: 70vh;
+        padding-top: 10vh;
+    }
+    #leftHeader h1{
+        font-size: calc(26px + (48 - 26) * ((100vw - 360px) / (1024 - 360)));
+    }
+    #leftHeader h2{
+        font-size: calc(26px + (48 - 26) * ((100vw - 360px) / (1024 - 360)));
+        height: 25vh;
+    }
+    #leftHeader button{
+        font-size: calc(1px + (48 - 26) * ((100vw - 360px) / (1024 - 360)));
+    }
+    .icon-scroll{
+        width: 30px;
+        height: 60px;
+    }
+
+/****************************************************************************/
+/*************************HARDSKILLS***************************************/
+/****************************************************************************/
+
+#hardSkills{
+    height: 885vh;
+    padding-top: 0;
+    /*padding-left: 6vh;*/
+}
+#techno{
+    height: 336vh;
+    flex-direction: column;
+    padding-left: 4vw;
+    padding-top: 0;
+}
+.flip-box{
+    width: 80vw;
+    height: 100vh;
+}
+.techno-icon{
+    padding-left: 10.3vw;
+}
+#capacity{
+    height: 150vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5vh;
+}
+#capacity-icon1-glob{
+    height: 160vh;
+    flex-direction: column;
+}
+#capacity-icon2-glob{
+    display: flex;
+    height: 160vh;
+    flex-direction: column;
+}
+
+/*****************************************************************************/
+/*****************************SOFTSKILLS************************************/
+/*****************************************************************************/
+
+#softSkills{
+    height: 485vh;
+}
+#personality{
+    height: 217vh;
+}
+#personality-in{
+    height: 190vh;
+    grid-template-columns: auto auto;
+    margin-top: 10vh;
+}
+#hobbys{
+    margin-top: 5vh;
+    height: 110vh;
+}
+#hobbys-in{
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 100vh;
+}
+
+}
+
+/*****************************************************************************/
+/**************************PORTRAIT*****************************************/
+/*****************************************************************************/
+
+@media screen and (max-width: 1023px) and (orientation: portrait){
+
+/******************************************************************************/
+/**************************MENU HAMBURGER*********************************/
+/*****************************************************************************/
+
+#navBar{
+    margin-top: 2vh;
+    height: 80vh;
+}
+nav{
+    padding-left: 15vw;
+}
+nav ul li{
+    margin-bottom: 13vh;
+}
+#hamburger-button{
+    margin-top: 5vh;
+}
+
+/******************************************************************************/
+/***************************ACCUEIL******************************************/
+/*****************************************************************************/
+
+    #globaleHeader{
+        flex-direction: column;
+        justify-content: start;
+    }
+    #rightHeader{
+        height: 30vh;
+        margin-left: 25%;
+    }
+    #leftHeader{
+        max-height: 35vh;
+        width: 90vw;
+        
+    }
+    #leftHeader h1{
+        font-size: calc(26px + (48 - 26) * ((100vw - 360px) / (1024 - 360)));
+    }
+    #leftHeader h2{
+        font-size: calc(26px + (48 - 26) * ((100vw - 360px) / (1024 - 360)));
+        height: 4vh;
+    }
+    #leftHeader button{
+        font-size: calc(14px + (48 - 26) * ((100vw - 360px) / (1024 - 360)));
+        
+    }
+
+/*************************************************************/
+/*************************HARD-SKILLS***********************/
+/*************************************************************/
+
+#hardSkills{
+    height: 250vh;
+    margin: 0;
+    padding-top: 0;
+}
+#techno{
+    min-height: 180vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.flip-box{
+    width: 91.5vw;
+}
+.flip-box-front{
+    width: 90vw;
+    margin-left: 1vw;
+}
+.flip-box-back{
+    width: 90vw;
+}
+.techno-icon{
+    padding-left: 7.3vw;
+}
+#capacity{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#capacity-icon1-glob{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: fit-content;
+    min-height: 80vh;
+}
+.capacity-icon1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#capacity-icon2-glob{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: fit-content;
+    min-height: 80vh;
+}
+
+/***********************************************************/
+/***********************SOFT-SKILLS***********************/
+/**********************************************************/
+
+#softSkills{
+    height: 155vh;
+    width: 100vw;
+    margin: 0;
+    /*margin-left: 1vh;*/
+}
+#personality{
+    width: 85vw;
+    height: 95vh;
+    margin-left: 6vw;
+}
+#personality-in{
+    height: 80vh;
+    grid-template-columns: auto auto;
+}
+#hobbys{
+    min-height: 60vh;
+    margin-bottom: 5vh;
+    width: 85vw;
+    margin-left: 6vw;
+}
+#hobbys-in{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5vh 0;
+    height: 40vh;
+}
+/***********************************************************************/
+/*************************PROFIL***************************************/
+/**********************************************************************/
+#profil-in{
+    flex-direction: inherit;
+}
+#profil-left{
+    display: none;
+}
+#profil-right {
+    width: 90vw;
+    margin-left: 5vh;
+}
+#profil-right h2{
+    margin-top: 0vh;
+    text-align: center;
+}
+#profil-right p{
+    width: 90vw;
+    text-align: inherit;
+    font-size: calc(32px + (52 - 36) * ((100vw - 1024px) / (1920 - 1024))) ;
+}
+
+}
+
+/************************************************************/
+/***************SMARTPHONE*******************************/
+/**********************************************************/
+
+@media screen and (max-width : 414px) and (orientation: portrait){
+    .personality-icon_img img{
+        width: 15vh;
+    }
+    .soft-skills-icon p{
+        font-size: calc(24px + (48 - 26) * ((100vw - 360px) / (1024 - 360)));;
+    }
+}
