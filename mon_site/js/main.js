@@ -139,7 +139,7 @@ window.onload = function(){
     }else{
         /*responsive_slide1.classList.add('scrollable-content');
         responsive_slide2.classList.add('scrollable-content');*/
-        creaSlide();
+        //creaSlide();
     }
     load();
     
