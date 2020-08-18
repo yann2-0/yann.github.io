@@ -686,3 +686,7 @@ footer p{
     margin-top: 2vh;
     font-size: 1em;
 }
+
+.fp-scrollable{
+    height: auto !important;
+}
