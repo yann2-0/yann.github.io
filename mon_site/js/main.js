@@ -122,7 +122,7 @@ function switchLinkNav(elm1, elm2, elm3, elm4){
 //BOUTON A PROPOS //
 var aPropos = document.getElementsByTagName('button')[1];
 aPropos.onclick = function(){
-    location.href = 'scrollBar.html#3rdPage';
+    location.href = 'index.html#3rdPage';
 }
 
 // FIN BOUTON //
