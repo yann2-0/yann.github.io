@@ -59,7 +59,7 @@ var icon_1 = document.getElementById('capacity-icon1-glob');
 var icon_2 = document.getElementById('capacity-icon2-glob');
 var hamburger_icon = document.getElementById('hamburger-button');
 
-window.onscroll = function() {
+window.onhashchange = function() {
 var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
         navBar.style.top = "0";

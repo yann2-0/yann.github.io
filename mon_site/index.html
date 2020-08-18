@@ -14,29 +14,31 @@
 </head>
 <body >
 
+    <div id="hamburger">
+        <div id="hamburger-content">
+            <div id="navBar">
+                <nav>
+                    <ul>
+                        <li><a href="#firstPage" id="acceuilNav">Acceuil</a></li>
+                        <li><a href="#secondPage" id="skillsNav">Skills</a></li>
+                        <li><a href="#3rdPage" id="profilNav">Profil</a></li>
+                        <li><a href="#4rdPage" id="contactNav">Contact</a></li>
+                    </ul>
+                </nav>    
+            </div>                    
+        </div>
+        <button id="hamburger-button">&#9776;</button>
+        <div id="hamburger-sidebar">
+            <div id="hamburger-sidebar-header"></div>
+            <div id="hamburger-sidebar-body"></div>
+        </div>
+        <div id="hamburger-overlay"></div>
+    </div>
+
 <div id="fullpage">
     <div id="section0" class="section">
         <header id="header">
-            <div id="hamburger">
-                <div id="hamburger-content">
-                    <div id="navBar">
-                        <nav>
-                            <ul>
-                                <li><a href="#firstPage" id="acceuilNav">Acceuil</a></li>
-                                <li><a href="#secondPage" id="skillsNav">Skills</a></li>
-                                <li><a href="#3rdPage" id="profilNav">Profil</a></li>
-                                <li><a href="#4rdPage" id="contactNav">Contact</a></li>
-                            </ul>
-                        </nav>    
-                    </div>                    
-                </div>
-                <button id="hamburger-button">&#9776;</button>
-                <div id="hamburger-sidebar">
-                    <div id="hamburger-sidebar-header"></div>
-                    <div id="hamburger-sidebar-body"></div>
-                </div>
-                <div id="hamburger-overlay"></div>
-            </div>
+            
             <div id="globaleHeader">
                 <div id="leftHeader">
                     <!--<h1>Bonjour,<br>je suis <em>Yann</em><br><strong>Développeur web</strong></h1>-->
@@ -265,6 +267,7 @@
         //sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE'],
         /*normalScrollElements: '.scrollable-content',
         scrollBar: true*/
+    menu: "#navBar",
 	scrollOverflow:true
     });
 </script>
