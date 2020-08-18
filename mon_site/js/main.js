@@ -141,6 +141,7 @@ window.onload = function(){
         responsive_slide2.classList.add('scrollable-content');*/
         //creaSlide();
         acceuil.classList.add('fp-auto-height-responsive');
+        document.getElementsByTagName('body').classList.add('fp-responsive')
     }
     load();
     
