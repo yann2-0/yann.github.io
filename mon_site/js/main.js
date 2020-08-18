@@ -131,7 +131,6 @@ aPropos.onclick = function(){
 
 var responsive_slide1 = document.getElementById('change_0');
 var responsive_slide2 = document.getElementById('change_1');
-
 window.onload = function(){
     if(screen > 768){
         navBar.style.display = 'none';
@@ -141,7 +140,7 @@ window.onload = function(){
         responsive_slide2.classList.add('scrollable-content');*/
         //creaSlide();
         acceuil.classList.add('fp-auto-height-responsive');
-        document.getElementsByTagName('body').classList.add('fp-responsive');
+        acceuil.classList.add('fp-responsive');
         console.log('ok');
     }
     load();
