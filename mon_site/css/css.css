@@ -633,7 +633,7 @@ input[type=email]{
     align-self: center;
     margin-bottom: 2vh;
     border: 1px solid #fff;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25),
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25),
                         -5px -5px 10px rgb(244, 246, 248);
     padding-left: 2vw;
     color: black;
@@ -646,7 +646,7 @@ textarea{
     align-self: center;
     margin-bottom: 5vh;
     border: 1px solid #fff;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25),
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25),
                         -5px -5px 10px rgb(244, 246, 248);
     padding-left: 2vw;
     padding-top: 2vw;
