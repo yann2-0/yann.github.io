@@ -633,9 +633,10 @@ input[type=email]{
     align-self: center;
     margin-bottom: 2vh;
     border: 1px solid #fff;
+    -webkit-appearance: none;
     box-shadow: 5px 5px 55px rgba(0, 0, 0, 0.25),
                         -5px -5px 10px rgb(244, 246, 248);
-    -webkit-appearance: none;
+    
     padding-left: 2vw;
     color: black;
     font-size: 1em;
@@ -647,9 +648,10 @@ textarea{
     align-self: center;
     margin-bottom: 5vh;
     border: 1px solid #fff;
+    -webkit-appearance: none;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25),
                         -5px -5px 10px rgb(244, 246, 248);
-    -webkit-appearance: none;
+    
     padding-left: 2vw;
     padding-top: 2vw;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -664,9 +666,10 @@ input[type=submit]{
     margin-bottom: 5vh;
     border: 1px solid rgba(255, 255, 255, 0);
     background-image: linear-gradient(to right, rgb(6,163,252), rgb(6,222,252));
+    -webkit-appearance: none;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25),
                         -5px -5px 10px rgb(244,246,248);
-    -webkit-appearance: none;
+    
     color: #fff;
     font-size: 2em;
 }
