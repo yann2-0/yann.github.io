@@ -1365,7 +1365,6 @@
 
             //needed for auto-height sections to determine if we want to scroll to the top or bottom of the destination
             previousDestTop = currentScroll;
-
             return direction;
         }
 

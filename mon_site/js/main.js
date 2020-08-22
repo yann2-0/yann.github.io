@@ -136,12 +136,7 @@ window.onload = function(){
         navBar.style.display = 'none';
         
     }else{
-        /*responsive_slide1.classList.add('scrollable-content');
-        responsive_slide2.classList.add('scrollable-content');*/
-        //creaSlide();
-        /*acceuil.classList.add('fp-auto-height-responsive');
-        acceuil.classList.add('fp-responsive');*/
-        console.log('ok');
+        console.log();
     }
     load();
     
@@ -266,9 +261,4 @@ function animateCapacity_icon_1(){
             },3000) 
         }
     },3000)
-}
-
-function creaSlide(){
-    skillSection.classList.add('fp-auto-height');
-    skillSection.classList.add('scrollable-content');
 }
