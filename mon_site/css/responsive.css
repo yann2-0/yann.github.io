@@ -203,7 +203,7 @@ nav ul li{
 /*************************************************************/
 
 #hardSkills{
-    height: 275vh;
+    height: 280vh;
     margin: 0;
     padding-top: 0;
 }
@@ -212,6 +212,7 @@ nav ul li{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-self: center;
 }
 .flip-box{
     width: 91.5vw;
