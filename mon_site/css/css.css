@@ -634,7 +634,7 @@ input[type=email]{
     margin-bottom: 2vh;
     border: 1px solid #fff;
     -webkit-appearance: none;
-    box-shadow: 5px 5px 55px rgba(0, 0, 0, 0.25),
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25),
                         -5px -5px 10px rgb(244, 246, 248);
     
     padding-left: 2vw;
