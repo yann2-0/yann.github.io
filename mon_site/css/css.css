@@ -371,8 +371,8 @@ header{
     backface-visibility: hidden;
 } 
 .flip-box-front {
-    /*background-color: #fff;*/
-    background-color: inherit;
+    background-color: #fff;
+    /*background-color: inherit;*/
     color: black;
     border-radius: 10px 10px 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25),
@@ -475,8 +475,7 @@ header{
     padding-top: 1vh;
 }
 #personality{
-    /*background-color: #fff;*/
-    background-color: inherit;
+    background-color: #fff;
     height: 57vh;
     margin-bottom: 2vh;
     border-radius: 10px;
@@ -499,12 +498,11 @@ header{
     grid-template-columns: auto auto auto;
 }
 #hobbys{
-    /*background-color: #fff;*/
-    background-color: inherit;
+    background-color: #fff;
     height: 29vh;
     border-radius: 10px;
-    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.25),
-                        5px 5px 10px rgb(244, 246, 248);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25),
+                        -5px 5px 10px rgb(244, 246, 248);
     text-align: center;
 }
 #hobbys h4{

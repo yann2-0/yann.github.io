@@ -258,15 +258,16 @@ nav ul li{
 /**********************************************************/
 
 #softSkills{
-    height: 155vh;
+    height: 175vh;
     width: 100vw;
     margin: 0;
+    align-items: center;
     /*margin-left: 1vh;*/
 }
 #personality{
     width: 85vw;
     height: 95vh;
-    margin-left: 6vw;
+    margin-top: 8vh;
 }
 #personality-in{
     height: 80vh;
@@ -276,7 +277,6 @@ nav ul li{
     min-height: 60vh;
     margin-bottom: 5vh;
     width: 85vw;
-    margin-left: 6vw;
 }
 #hobbys-in{
     display: grid;
