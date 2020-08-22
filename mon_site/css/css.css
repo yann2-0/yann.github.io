@@ -593,7 +593,7 @@ header{
     flex-direction: column;
 }
 #form{
-    background-color: inherit;
+    background-color: #fff;
     /*background-image: linear-gradient(to right, rgba(4, 94, 240, 0.411), rgba(255, 255, 255, 0.589));*/
     width: 60vw;
     height: 75vh;
