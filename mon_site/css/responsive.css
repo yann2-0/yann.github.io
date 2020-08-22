@@ -323,14 +323,17 @@ nav ul li{
 input[type=text],
 input[type=email]{
     width: 70vw;
+    -webkit-appearance: none;
 }
 textarea{
     width: 70vw;
+    -webkit-appearance: none;
 }
 input[type=submit]{
     width: 35vw;
     height: 8vh;
     font-size: 1.5em;
+    -webkit-appearance: none;
 }
 }
 
