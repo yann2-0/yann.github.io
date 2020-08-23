@@ -160,6 +160,9 @@ nav ul li{
 #slide2 .fp-scrollable{
     height: 100vh !important;
 }
+#section4 .fp-scrollable{
+    height: 100vh !important;
+}
 .fp-scroller{
     height: fit-content;
 }
@@ -310,8 +313,11 @@ nav ul li{
 /**********************************************************************************/
 /*********************************CONTACT***************************************/
 /*********************************************************************************/
-
+#contact{
+    height: 145vh;
+}
 #contact-block{
+    height: 140vh;
     padding-top: 9vh;
 }
 #form{
@@ -334,6 +340,9 @@ input[type=submit]{
     height: 8vh;
     font-size: 1.5em;
     -webkit-appearance: none;
+}
+footer{
+    height: 55vh;
 }
 }
 

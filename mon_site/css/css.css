@@ -581,7 +581,7 @@ header{
 /*****************************************************************************/
 
 #contact{
-    background-image: url(../css/images/image.jpg);
+    background: linear-gradient(118.47deg, #E9EDF0 0.61%, #E9EDF0 100%);
     background-size: cover;
     height: 100%;
 }
@@ -593,7 +593,7 @@ header{
     flex-direction: column;
 }
 #form{
-    background-color: #fff;
+    background: linear-gradient(118.47deg, #E9EDF0 0.61%, #E9EDF0 100%);
     /*background-image: linear-gradient(to right, rgba(4, 94, 240, 0.411), rgba(255, 255, 255, 0.589));*/
     width: 60vw;
     height: 75vh;
@@ -617,7 +617,7 @@ header{
     0 0 10px rgb(202, 226, 240),
     0 0 20px rgb(245, 246, 247),
     0 0 40px rgb(250, 251, 252);*/
-    font-weight: bold;
+    /*font-weight: bold;*/
 }
 form{
     display: flex;
@@ -634,9 +634,11 @@ input[type=email]{
     margin-bottom: 2vh;
     border: 1px solid #fff;
     -webkit-appearance: none;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25),
-                        -5px -5px 10px rgb(244, 246, 248);
-    
+    /*box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25),
+                        -5px -5px 10px rgb(244, 246, 248);*/
+    background: linear-gradient(134.17deg, #EEF0F5 4.98%, #E6E9EF 94.88%);
+    box-shadow: -12px -12px 20px rgba(255, 255, 255, 0.8), 10px 10px 24px rgba(166, 180, 200, 0.7);
+                        /*border-radius: 40px;*/
     padding-left: 2vw;
     color: black;
     font-size: 1em;
@@ -649,8 +651,10 @@ textarea{
     margin-bottom: 5vh;
     border: 1px solid #fff;
     -webkit-appearance: none;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25),
-                        -5px -5px 10px rgb(244, 246, 248);
+    background: linear-gradient(134.17deg, #EEF0F5 4.98%, #E6E9EF 94.88%);
+    box-shadow: -12px -12px 20px rgba(255, 255, 255, 0.8), 10px 10px 24px rgba(166, 180, 200, 0.7);
+    /*box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25),
+                        -5px -5px 10px rgb(244, 246, 248);*/
     
     padding-left: 2vw;
     padding-top: 2vw;
@@ -672,6 +676,16 @@ input[type=submit]{
     
     color: #fff;
     font-size: 2em;
+}
+input[type=text]:focus,
+input[type=email]:focus{
+    -webkit-appearance: none;
+    box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.75), inset 5px 5px 10px rgba(166, 180, 200, 0.75);
+    outline: none;
+}
+textarea:focus{
+    box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.75), inset 5px 5px 10px rgba(166, 180, 200, 0.75);
+    outline: none;
 }
 footer{
     background-color: rgb(0, 0, 0);
