@@ -59,7 +59,7 @@ var icon_1 = document.getElementById('capacity-icon1-glob');
 var icon_2 = document.getElementById('capacity-icon2-glob');
 var hamburger_icon = document.getElementById('hamburger-button');
 
-window.onhashchange = function() {
+/*window.onhashchange = function() {
 var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
         navBar.style.top = "0";
@@ -105,7 +105,7 @@ var currentScrollPos = window.pageYOffset;
         hamburger_icon.style.color= "black";
     }
 prevScrollpos = currentScrollPos;
-}
+}*/
 
 function switchLinkNav(elm1, elm2, elm3, elm4){
     setTimeout(function(){
@@ -119,8 +119,34 @@ function switchLinkNav(elm1, elm2, elm3, elm4){
 
 //FIN SCROLL NAVBAR //
 
+//BOUTON MOBILE//
+var rightHeader = document.getElementById('rightHeader');
+var leftHeader = document.getElementById('leftHeader');
+var spanMob = document.getElementById('display_on_off');
+var btn_mobile = document.getElementsByTagName('button')[1];
+var nbrClick = 0
+btn_mobile.onclick = function(){
+    nbrClick ++;
+    if(nbrClick%2 !== 0){
+        btn_mobile.classList.add('displayOn');
+        spanMob.classList.remove('spanOff');
+        spanMob.classList.add('spanOn');
+        rightHeader.style.display= 'none';
+        leftHeader.style.display= 'flex';
+    }else{
+        btn_mobile.classList.remove('displayOn');
+        spanMob.classList.remove('spanOn');
+        spanMob.classList.add('spanOff');
+        rightHeader.style.display= 'flex';
+        leftHeader.style.display= 'none';
+    }
+    
+}
+
+//FIN BOUTON MOBILE//
+
 //BOUTON A PROPOS //
-var aPropos = document.getElementsByTagName('button')[1];
+var aPropos = document.getElementsByTagName('button')[2];
 aPropos.onclick = function(){
     location.href = 'index.html#3rdPage';
 }
@@ -133,7 +159,7 @@ var responsive_slide1 = document.getElementById('change_0');
 var responsive_slide2 = document.getElementById('change_1');
 window.onload = function(){
     if(screen > 768){
-        navBar.style.display = 'none';
+        //navBar.style.display = 'none';
         
     }else{
         console.log();
@@ -261,4 +287,20 @@ function animateCapacity_icon_1(){
             },3000) 
         }
     },3000)
+}
+
+/***************************************************************/
+/********************************hover h2***********************/
+/**************************************************************/
+
+var h2_1 = document.getElementById('titre1');
+var h2_2 = document.getElementById('titre2');
+
+h2_1.onmouseover = function(){
+    h2_1.style.display = 'none';
+    h2_2.style.display = 'block';
+}
+h2_2.onmouseout = function(){
+    h2_1.style.display = 'block';
+    h2_2.style.display = 'none';
 }

@@ -19,10 +19,10 @@
             <div id="navBar">
                 <nav>
                     <ul>
-                        <li><a href="#firstPage" id="acceuilNav">Acceuil</a></li>
-                        <li><a href="#secondPage" id="skillsNav">Skills</a></li>
-                        <li><a href="#3rdPage" id="profilNav">Profil</a></li>
-                        <li><a href="#4rdPage" id="contactNav">Contact</a></li>
+                        <li><a href="#firstPage" id="acceuilNav" class="darkNav">Acceuil</a></li>
+                        <li><a href="#secondPage" id="skillsNav" class="darkNav">Skills</a></li>
+                        <li><a href="#3rdPage" id="profilNav" class="darkNav">Profil</a></li>
+                        <li><a href="#4rdPage" id="contactNav" class="darkNav">Contact</a></li>
                     </ul>
                 </nav>    
             </div>                    
@@ -38,22 +38,27 @@
 <div id="fullpage">
     <div id="section0" class="section">
         <header id="header">
-            
+            <button id="display-mobile" class="displayOff"></button>
+            <span id="display_on_off" class="spanOff"></span>
             <div id="globaleHeader">
+                
                 <div id="leftHeader">
                     <!--<h1>Bonjour,<br>je suis <em>Yann</em><br><strong>Développeur web</strong></h1>-->
                     <h1 id="titre" class="block_2out">Yann <span>BUNDY</span></h1>
                     <!--<h2 class="line-1 anim-typewriter">Développeur web</h2>-->
+                    <h2 id="titre1">BIENVENUE</h2>
                     <h2 id="titre2" class="typewrite" data-period="2000" data-type='[ "DÉVELOPPEUR WEB",  "BASÉ À LA RÉUNION" ]'>
                         <span class="wrap"></span>
                     </h2>
-                    <button id="button1" class="block_out">A propos de moi</button>
+                    <button id="button1" class="block_out"></button>
                 </div>
                 <div id="rightHeader">
-                    <img id="ordi" class="block_1out" src="./css/images/svg/holoComputeur.svg">
+                    <img id="ordi" class="block_1out" src="./css/images/logo-export.png">
                 </div>
             </div>
-            <div id="icon-scroll" class='icon-scroll block3_out'></div>
+            <div id="icon-scroll" class='icon-scroll block3_out'>
+                <img data-src="./css/images/svg/scroll.svg">
+            </div>
         </header>        
     </div>
     <div id="section1" class="section">
@@ -246,7 +251,15 @@
                         <input type="text" placeholder="Votre nom ou société">
                         <input type="email" placeholder="Votre mail">
                         <textarea name="message" rows="10" cols="30" placeholder="Votre texte ici..."></textarea>
-                        <input type="submit">
+                        <span id="sendMsg">
+                            <button type="tel">
+                                <a href="#">
+
+                                </a>
+                            </button>
+                            <button type="submit">Envoyer</button>
+                        </span>
+                        
                     </form>
                 </div>
                 <footer>
