@@ -125,7 +125,7 @@ var leftHeader = document.getElementById('leftHeader');
 var spanMob = document.getElementById('display_on_off');
 var btn_mobile = document.getElementsByTagName('button')[1];
 var nbrClick = 0
-btn_mobile.onclick = function(){
+spanMob.onclick = function(){
     nbrClick ++;
     if(nbrClick%2 !== 0){
         btn_mobile.classList.add('displayOn');
