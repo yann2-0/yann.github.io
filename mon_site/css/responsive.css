@@ -220,7 +220,7 @@ nav ul li{
     }
     #rightHeader{
         /*display: none;*/
-        height: 70vh;
+        height: 60vh;
         width: 80vw;
         margin-left: 10%;
         margin-top: 12vh;
@@ -228,12 +228,12 @@ nav ul li{
     #rightHeader img{
         height: 65vh;
         width: 180vw;
-        margin-top: 4vh;
+        margin-top: 0vh;
         margin-right: 3.5vw;
     }
     #leftHeader{
         display: none;
-        height: 75vh;
+        height: 60vh;
         width: 90vw;
         margin-top: 10vh;
         margin-left: 4.9vw;
@@ -259,6 +259,7 @@ nav ul li{
         
     }
     #icon-scroll img{
+        top: 77vh;
         left: 46vw;
     }
 
