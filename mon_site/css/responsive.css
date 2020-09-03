@@ -175,22 +175,22 @@ nav ul li{
         flex-direction: column;
         justify-content: start;
     }
-    .switch1 {
+    .kiki1 {
         position: relative;
         display: inline-block;
         width: 60px;
         height: 34px;
-        top: 3.5vh;
-        left: 75vw;
+        /*top: 3.5vh;
+        left: 75vw;*/
       }
       
-      .switch1 input { 
+      .kiki1 input { 
         opacity: 0;
         width: 0;
         height: 0;
       }
       
-      .slider {
+      .slider1 {
         position: absolute;
         cursor: pointer;
         top: 0;
@@ -203,7 +203,7 @@ nav ul li{
         transition: .4s;
       }
       
-      .slider:before {
+      .slider1:before {
         position: absolute;
         content: "";
         height: 26px;
@@ -216,15 +216,15 @@ nav ul li{
         transition: .4s;
       }
       
-      input:checked + .slider {
+      input:checked + .slider1 {
         background-color: #2196F3;
       }
       
-      input:focus + .slider {
+      input:focus + .slider1 {
         box-shadow: 0 0 1px #2196F3;
       }
       
-      input:checked + .slider:before {
+      input:checked + .slider1:before {
         -webkit-transform: translateX(26px);
         -ms-transform: translateX(26px);
         -moz-transform: translateX(26px);
@@ -232,11 +232,11 @@ nav ul li{
       }
       
       /* Rounded sliders */
-      .slider.round {
+      .slider1.round1 {
         border-radius: 34px;
       }
       
-      .slider.round:before {
+      .slider1.round1:before {
         border-radius: 50%;
       }
     #display-mobile{
