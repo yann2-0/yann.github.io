@@ -199,7 +199,10 @@ nav ul li{
         -webkit-transition: .4s;
         transition: .4s;
       }
-      
+      input[type=chekbox]{
+          -webkit-appearance: none;
+          appearance: none;
+      }
       .slider:before {
         position: absolute;
         content: "";
@@ -212,7 +215,7 @@ nav ul li{
         transition: .4s;
       }
       
-      input[type=checkbox]:checked + .slider {
+      input:checked + .slider {
         background-color: #2196F3;
       }
       
