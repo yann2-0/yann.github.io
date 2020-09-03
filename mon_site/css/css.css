@@ -184,7 +184,7 @@ nav ul li:hover {
 header{
     /*background-color: red;*/
     /*background-image: url(../css/images/fond.jpg);*/
-    background:  #111111;
+    background:  #222;
     background-size: cover;
     height: 100vh;
 }
