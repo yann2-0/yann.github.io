@@ -147,7 +147,7 @@ switch_control.onclick = function(){
 //FIN BOUTON MOBILE//
 
 //BOUTON A PROPOS //
-var aPropos = document.getElementsByTagName('button')[2];
+var aPropos = document.getElementsByTagName('button')[1];
 aPropos.onclick = function(){
     location.href = 'index.html#3rdPage';
 }
