@@ -124,19 +124,20 @@ var rightHeader = document.getElementById('rightHeader');
 var leftHeader = document.getElementById('leftHeader');
 var spanMob = document.getElementById('display_on_off');
 var btn_mobile = document.getElementsByTagName('button')[1];
+var switch_control = document.getElementsByClassName('switch')[0];
 var nbrClick = 0
-spanMob.onclick = function(){
+switch_control.onclick = function(){
     nbrClick ++;
     if(nbrClick%2 !== 0){
-        btn_mobile.classList.add('displayOn');
+        /*btn_mobile.classList.add('displayOn');
         spanMob.classList.remove('spanOff');
-        spanMob.classList.add('spanOn');
+        spanMob.classList.add('spanOn');*/
         rightHeader.style.display= 'none';
         leftHeader.style.display= 'flex';
     }else{
-        btn_mobile.classList.remove('displayOn');
+        /*btn_mobile.classList.remove('displayOn');
         spanMob.classList.remove('spanOn');
-        spanMob.classList.add('spanOff');
+        spanMob.classList.add('spanOff');*/
         rightHeader.style.display= 'flex';
         leftHeader.style.display= 'none';
     }

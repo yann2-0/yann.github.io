@@ -199,7 +199,7 @@ nav ul li{
         -webkit-transition: .4s;
         transition: .4s;
       }
-      input[type=chekbox]{
+      .switch input [type=chekbox]{
           -webkit-appearance: none;
           appearance: none;
       }
@@ -215,7 +215,7 @@ nav ul li{
         transition: .4s;
       }
       
-      input:checked + .slider {
+      .switch input:checked + .slider {
         background-color: #2196F3;
       }
       
