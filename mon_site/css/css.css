@@ -40,7 +40,7 @@ nav{
     border-radius: 20px;
     border: 1px solid #28272700;
     -webkit-appearance: none;
-    box-shadow: -2px -2px 2px rgba(26, 25, 25, 0.8), 3px 3px 3px rgba(0, 0, 0, 0.7);
+    box-shadow: -2px -2px 2px rgba(53, 52, 52, 0.8), 3px 3px 3px rgba(0, 0, 0, 0.7);
 }
 .darkNav{
     
@@ -58,7 +58,7 @@ nav ul li a {
 nav ul li:hover {
     border: 1px solid #28272700;
     border-radius: 15px;
-    box-shadow: inset -2px -2px 0px rgba(26, 25, 25, 0.8), inset 1px 1px 2px rgba(0, 0, 0, 0.7);
+    box-shadow: inset -2px -2px 0px rgba(53, 52, 52, 0.8), inset 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 .activeNav {
     color: rgb(6,222,252);
@@ -196,7 +196,7 @@ header{
     justify-content: space-around;
     height: 100vh;
 }
-#display-mobile{
+.switch{
     display: none;
 }
 #leftHeader{
@@ -210,7 +210,7 @@ header{
     justify-content: space-around;
     border: 1px solid #28272700;
     border-radius: 10px;
-    box-shadow: inset -4px -4px 0px rgba(26, 25, 25, 0.8), inset 1px 1px 5px rgba(0, 0, 0, 0.7);
+    box-shadow: inset -4px -4px 0px rgba(53, 52, 52, 0.8), inset 1px 1px 5px rgba(0, 0, 0, 0.7);
 }
 
 #leftHeader h1{
@@ -251,7 +251,7 @@ h1#titre span{
     padding-top: 3vh;
     border: 1px solid #28272700;
     border-radius: 20px;
-    box-shadow: -2px -2px 2px rgba(26, 25, 25, 0.8),  3px 3px 3px rgba(0, 0, 0, 0.7);
+    box-shadow: -2px -2px 2px rgba(53, 52, 52, 0.8),  3px 3px 3px rgba(0, 0, 0, 0.7);
     cursor: pointer;
 }
 #leftHeader h2#titre2{
@@ -268,7 +268,7 @@ h1#titre span{
     padding-top: 3vh;
     border: 1px solid #28272700;
     border-radius: 20px;
-    box-shadow: inset -4px -4px 0px rgba(26, 25, 25, 0.8), inset 1px 1px 5px rgba(0, 0, 0, 0.7);
+    box-shadow: inset -4px -4px 0px rgba(53, 52, 52, 0.8), inset 1px 1px 5px rgba(0, 0, 0, 0.7);
     cursor: pointer;
 }
 #leftHeader button{
@@ -283,7 +283,7 @@ h1#titre span{
     cursor: pointer;
     height: 8vh;
     width: 4.3vw;
-    box-shadow: -2px -2px 0px rgba(26, 25, 25, 0.8), 3px 3px 2px rgba(0, 0, 0, 0.7);
+    box-shadow: -2px -2px 0px rgba(53, 52, 52, 0.8), 3px 3px 2px rgba(0, 0, 0, 0.7);
 }
 #leftHeader button a {
     color: #fff;
@@ -292,7 +292,7 @@ h1#titre span{
     color: rgb(6, 222, 252);
 }
 #leftHeader button:hover{
-    box-shadow: inset -3px -3px 0px rgba(26, 25, 25, 0.8), inset 1px 1px 2px rgba(0, 0, 0, 0.7);
+    box-shadow: inset -3px -3px 0px rgba(53, 52, 52, 0.8), inset 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 #leftHeader button:active{
     color: rgb(6,222,252);
@@ -319,7 +319,7 @@ h1#titre span{
     justify-content: center;
     border: 1px solid #28272700;
     -webkit-appearance: none;
-    box-shadow: -2px -2px 2px rgba(26, 25, 25, 0.8), 3px 3px 3px rgba(0, 0, 0, 0.7);
+    box-shadow: -2px -2px 2px rgba(53, 52, 52, 0.8), 3px 3px 3px rgba(0, 0, 0, 0.7);
     border-radius: 10px;
 }
 #rightHeader img{

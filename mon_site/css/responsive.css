@@ -179,9 +179,9 @@ nav ul li{
         position: relative;
         display: inline-block;
         width: 50px;
-        height: 14px;
+        height: 20px;
         top: 4vh;
-        left: 70vw;
+        left: 79vw;
       }
       
       .switch input { 
@@ -206,7 +206,7 @@ nav ul li{
         content: "";
         height: 26px;
         width: 26px;
-        bottom: -1.2vh;
+        bottom: -0.5vh;
         background-color: white;
         -webkit-transition: .4s;
         transition: .4s;
@@ -280,8 +280,8 @@ nav ul li{
     #rightHeader{
         /*display: none;*/
         height: 60vh;
-        width: 80vw;
-        margin-left: 10%;
+        width: 90vw;
+        margin-left: 5%;
         margin-top: 8vh;
     }
     #rightHeader img{
