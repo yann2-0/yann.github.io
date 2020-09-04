@@ -207,7 +207,7 @@ nav ul li{
         content: "";
         height: 26px;
         width: 26px;
-        bottom: -0.5vh;
+        bottom: -0.7vh;
         background-color: #222;
         box-shadow: -2px -2px 2px rgba(53, 52, 52, 0.8), 3px 3px 3px rgba(0, 0, 0, 0.7);
         -webkit-transition: .4s;

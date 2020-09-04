@@ -299,12 +299,13 @@ function animateCapacity_icon_1(){
 
 var h2_1 = document.getElementById('titre1');
 var h2_2 = document.getElementById('titre2');
+var clickCount= 0;
 
-h2_1.onmouseover = function(){
-    h2_1.style.display = 'none';
-    h2_2.style.display = 'block';
+h2_1.onclick = function(){
+        h2_1.style.display = 'none';
+    h2_2.style.display = 'block';    
 }
-h2_2.onmouseout = function(){
+h2_2.onclick = function(){
     h2_1.style.display = 'block';
     h2_2.style.display = 'none';
 }
