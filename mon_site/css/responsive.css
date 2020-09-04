@@ -178,8 +178,10 @@ nav ul li{
     .switch {
         position: relative;
         display: inline-block;
-        width: 60px;
-        height: 34px;
+        width: 50px;
+        height: 14px;
+        top: 4vh;
+        left: 70vw;
       }
       
       .switch input { 
@@ -199,17 +201,12 @@ nav ul li{
         -webkit-transition: .4s;
         transition: .4s;
       }
-      .switch input [type=chekbox]{
-          -webkit-appearance: none;
-          appearance: none;
-      }
       .slider:before {
         position: absolute;
         content: "";
         height: 26px;
         width: 26px;
-        left: 4px;
-        bottom: 4px;
+        bottom: -1.2vh;
         background-color: white;
         -webkit-transition: .4s;
         transition: .4s;
@@ -285,7 +282,7 @@ nav ul li{
         height: 60vh;
         width: 80vw;
         margin-left: 10%;
-        margin-top: 12vh;
+        margin-top: 8vh;
     }
     #rightHeader img{
         height: 65vh;
@@ -297,7 +294,7 @@ nav ul li{
         display: none;
         height: 60vh;
         width: 90vw;
-        margin-top: 10vh;
+        margin-top: 8vh;
         margin-left: 4.9vw;
         
     }

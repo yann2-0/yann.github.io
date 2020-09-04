@@ -125,6 +125,7 @@ var leftHeader = document.getElementById('leftHeader');
 var spanMob = document.getElementById('display_on_off');
 var btn_mobile = document.getElementsByTagName('button')[1];
 var switch_control = document.getElementsByClassName('switch')[0];
+var inputCheck = document.getElementById('checkBox1');
 var nbrClick = 0
 switch_control.onclick = function(){
     nbrClick ++;
@@ -132,12 +133,14 @@ switch_control.onclick = function(){
         /*btn_mobile.classList.add('displayOn');
         spanMob.classList.remove('spanOff');
         spanMob.classList.add('spanOn');*/
+        inputCheck.checked = true;
         rightHeader.style.display= 'none';
         leftHeader.style.display= 'flex';
     }else{
         /*btn_mobile.classList.remove('displayOn');
         spanMob.classList.remove('spanOn');
         spanMob.classList.add('spanOff');*/
+        inputCheck.checked = false;
         rightHeader.style.display= 'flex';
         leftHeader.style.display= 'none';
     }
