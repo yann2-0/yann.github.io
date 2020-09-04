@@ -10,9 +10,9 @@
     nav ul li{
         margin-bottom: 3vh;
     }
-    #hamburger-button{
+    /*#hamburger-button{
         margin-top: 5vh;
-    }
+    }*/
 
     /*********************************************************************************/
 /******************************CONTROLE SCROLL********************************/
@@ -31,17 +31,23 @@
 /********************************************************************************/
 /******************************ACCEUIL*****************************************/
 /*******************************************************************************/
-
+.switch{
+    display: inline-block;
+    left: 86vw;
+}
     #rightHeader{
         margin-top: 12vh;
+        width: 90vw;
     }
     #rightHeader img{
-        width: 40vw;
+        width: 100vw;
     }
     #leftHeader{
-        margin-top: 12vh;
-        height: 70vh;
-        padding-top: 10vh;
+        display: none;
+        margin-top: 10vh;
+        height: 65vh;
+        width: 90vw;
+        /*padding-top: 10vh;*/
     }
     #leftHeader h1{
         font-size: calc(26px + (48 - 26) * ((100vw - 360px) / (1024 - 360)));
@@ -49,6 +55,16 @@
     #leftHeader h2{
         font-size: calc(26px + (48 - 26) * ((100vw - 360px) / (1024 - 360)));
         height: 25vh;
+    }
+    #leftHeader h2#titre1{
+        width: 80vw;
+        height: 15vh;
+        border-radius: 10px;
+    }
+    #leftHeader h2#titre2{
+        width: 80vw;
+        height: 15vh;
+        border-radius: 10px;
     }
     #leftHeader button{
         font-size: calc(1px + (48 - 26) * ((100vw - 360px) / (1024 - 360)));
@@ -175,111 +191,9 @@ nav ul li{
         flex-direction: column;
         justify-content: start;
     }
-    .switch {
-        position: relative;
-        display: inline-block;
-        width: 50px;
-        height: 20px;
-        top: 4vh;
-        left: 79vw;
-      }
-      
-      .switch input { 
-        opacity: 0;
-        width: 0;
-        height: 0;
-      }
-      
-      .slider {
-        position: absolute;
-        cursor: pointer;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #222;
-        box-shadow: inset -2px -2px 2px rgba(53, 52, 52, 0.8),  inset 3px 3px 3px rgba(0, 0, 0, 0.7);
-        -webkit-transition: .4s;
-        transition: .4s;
-      }
-      .slider:before {
-        position: absolute;
-        content: "";
-        height: 26px;
-        width: 26px;
-        bottom: -0.7vh;
-        background-color: #222;
-        box-shadow: -2px -2px 2px rgba(53, 52, 52, 0.8), 3px 3px 3px rgba(0, 0, 0, 0.7);
-        -webkit-transition: .4s;
-        transition: .4s;
-      }
-      
-      /*.switch input:checked + .slider {
-        background-color: #2196F3;
-        box-shadow: inset -2px -2px 2px rgba(116, 174, 240, 0),  inset 3px 3px 3px rgba(5, 151, 248, 0);
-      }
-      
-      input:focus + .slider {
-        box-shadow: 0 0 1px #2196F3;
-      }*/
-      
-      input:checked + .slider:before {
-        -webkit-transform: translateX(26px);
-        -ms-transform: translateX(26px);
-        transform: translateX(26px);
-      }
-      
-      /* Rounded sliders */
-      .slider.round {
-        border-radius: 34px;
-      }
-      
-      .slider.round:before {
-        border-radius: 50%;
-      }
-    #display-mobile{
-        /*display: block;
-        position: absolute;
-        top: 5vh;
-        left: 80vw;
-        cursor: pointer;*/
-        display: block;
-        position: absolute;
-        top: 3.5vh;
-        left: 80vw;
-        background-color: inherit;
-        color: #fff;
-        border: 1px solid #28272700;
-        border-radius: 100px;
-        cursor: pointer;
-        height: 4vh;
-        width: 7vw;
-        
-    }
-    #display_on_off{
-        display: block;
-        position: absolute;
-        top: 4.4vh;
-        left: 81.5vw;
-        cursor: pointer;
-        height: 2vh;
-        width: 3.5vw;
-        border-radius: 40px;
-        transform: rotate(-90deg);
-    }
-    .spanOff{
-        background: linear-gradient(108.3deg, #1B9BE8 23.49%, #0D6CE6 76.7%);
-        box-shadow: inset 5px -4px 10px #3185D0;
-    }
-    .spanOn{
-        box-shadow: inset 5px -4px 10px #6b6c6d;
-    }
-    .displayOff{
-        box-shadow: -2px -2px 0px rgba(26, 25, 25, 0.8), 3px 3px 2px rgba(0, 0, 0, 0.7);
-    }
-    .displayOn{
-        box-shadow: inset -3px -3px 0px rgba(26, 25, 25, 0.8), inset 1px 1px 2px rgba(0, 0, 0, 0.7);
-    }
+.switch{
+    display: inline-block;
+}
     #rightHeader{
         /*display: none;*/
         height: 60vh;
