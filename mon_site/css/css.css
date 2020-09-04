@@ -372,9 +372,9 @@ h1#titre span{
 }
 #rightHeader img{
     display: none;
-    height: 100vh;
-    margin-top: -11.7vh;
-    margin-right: 1.5vw;
+    height: 65vh;
+    margin-top: 2vh;
+    /*margin-right: 1.5vw;*/
 }
 /*.icon-scroll,
 .icon-scroll:before{
