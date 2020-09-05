@@ -433,9 +433,10 @@ h1#titre span{
     }*/
 #icon-scroll img{
     position: absolute;
-top: 87vh;
-height: 10vh;
-left: 48vw;
+    top: 83vh;
+    height: 20vh;
+    width: 20vw;
+    left: 41.5vw;
 }
 
 /************************************************************/

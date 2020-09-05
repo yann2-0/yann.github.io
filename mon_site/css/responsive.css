@@ -69,9 +69,9 @@
     #leftHeader button{
         font-size: calc(1px + (48 - 26) * ((100vw - 360px) / (1024 - 360)));
     }
-    .icon-scroll{
-        width: 30px;
-        height: 60px;
+    #icon-scroll img{
+        top: 82vh;
+        height: 30vh;
     }
 
 /****************************************************************************/
@@ -237,8 +237,10 @@ nav ul li{
         
     }
     #icon-scroll img{
-        top: 77vh;
-        left: 46vw;
+        height: 20vh;
+        width: 60vw;
+        top: 70vh;
+        left: 25vw;
     }
 
 /*************************************************************/
