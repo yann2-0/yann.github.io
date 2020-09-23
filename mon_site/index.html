@@ -19,10 +19,10 @@
             <div id="navBar">
                 <nav>
                     <ul>
-                        <li><a href="#firstPage" id="acceuilNav" class="darkNav">Acceuil</a></li>
-                        <li><a href="#secondPage" id="skillsNav" class="darkNav">Skills</a></li>
-                        <li><a href="#3rdPage" id="profilNav" class="darkNav">Profil</a></li>
-                        <li><a href="#4rdPage" id="contactNav" class="darkNav">Contact</a></li>
+                        <li class="nav_li navDark"><a href="#firstPage" id="acceuilNav" ><img src="./css/images/svg/home1.svg"></a></li>
+                        <li class="nav_li navDark"><a href="#secondPage" id="skillsNav" ><img src="./css/images/svg/suitcase1.svg"></a></li>
+                        <li class="nav_li navDark"><a href="#3rdPage" id="profilNav" ><img src="./css/images/svg/user1.svg"></a></li>
+                        <li class="nav_li navDark"><a href="#4rdPage" id="contactNav" ><img src="./css/images/svg/email1.svg"></a></li>
                     </ul>
                 </nav>    
             </div>                    
@@ -50,14 +50,14 @@
                     <!--<h1>Bonjour,<br>je suis <em>Yann</em><br><strong>Développeur web</strong></h1>-->
                     <h1 id="titre" class="block_2out">Yann <span>BUNDY</span></h1>
                     <!--<h2 class="line-1 anim-typewriter">Développeur web</h2>-->
-                    <h2 id="titre1">BIENVENUE</h2>
-                    <h2 id="titre2" class="typewrite" data-period="2000" data-type='[ "DÉVELOPPEUR WEB",  "BASÉ À LA RÉUNION" ]'>
+                    <h2 id="titre1" class="block_1out">BIENVENUE</h2>
+                    <h2 id="titre2" class="typewrite" data-period="2000" data-type='[ "DÉVELOPPEUR WEB",  "basé à la Réunion", "recherche un stage", "ou une alternance" ]'>
                         <span class="wrap"></span>
                     </h2>
-                    <button id="button1" class="block_out"></button>
+                    <button id="button1" class="block_2out"><img src="./css/images/svg/laptop1.svg"><span id="aPropos">à propos</span> </button>
                 </div>
                 <div id="rightHeader">
-                    <img id="ordi" class="block_1out" src="./css/images/logo-export.png">
+                    <img id="ordi" class="block_2out" src="./css/images/logo1.png">
                 </div>
             </div>
             <div id="icon-scroll" class='icon-scroll block3_out'>
@@ -139,11 +139,11 @@
                         <div id="capacity-icon1-glob">
                             <div class="capacity-icon1">
                                 <img data-src='./css/images/svg/front.svg'>
-                                <p>Front end</p>
+                                <p>Front-end</p>
                             </div>
                             <div class="capacity-icon1">
-                                <img data-src='./css/images/svg/back.svg'>
-                                <p>Back end</p>
+                                <img data-src='./css/images/svg/site_dynamique.svg'>
+                                <p>Site dynamique</p>
                             </div>
                             <div class="capacity-icon1">
                                 <img data-src='./css/images/svg/responsive.svg'>
@@ -152,8 +152,8 @@
                         </div>
                         <div id="capacity-icon2-glob">
                             <div class="capacity-icon2">
-                                <img data-src='./css/images/svg/site_dynamique.svg'>
-                                <p>Site dynamique</p>
+                                <img data-src='./css/images/svg/back.svg'>
+                                <p>Back-end</p>
                             </div>
                             <div class="capacity-icon2">
                                 <img data-src='./css/images/svg/bdd.svg'>
@@ -229,17 +229,19 @@
 
     <div id="section3" class="section">
         <section id="profil">
+            <label class="switch">
+                <input type="checkbox" id="checkBox2">
+                <span class="slider round"></span>
+              </label>
             <div id="change_2">
                 <div id="profil-in">
                     <div id="profil-left">
-                        <img data-src="./css/images/svg/holo_profil.svg">
+                        <img data-src="./css/images/profilOk.png">
                     </div>
                     <div id="profil-right">
                         <h2>A propos</h2>
                         <p>The standard Lorem Ipsum passage, used since the 1500s
                             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                            
-                            Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
                             </p>
                     </div>
                 </div>
@@ -249,7 +251,7 @@
     <div id="section4" class="section">
         <section id="contact">
             <div id="contact-block">
-                <div id="form">
+                <div id="form" class="navWhite">
                     <h2>Contactez-moi</h2>
                     <form>
                         <input type="text" placeholder="Votre nom ou société">
@@ -258,13 +260,20 @@
                         <span id="sendMsg">
                             <button type="tel">
                                 <a href="#">
-
+                                    <img src="./css/images/svg/phone.svg">
                                 </a>
                             </button>
-                            <button type="submit">Envoyer</button>
+                            <button type="reset"><img src="./css/images/svg/uncheck.svg"></button>
+                            <button type="submit"><img src="./css/images/svg/check.svg"></button>
                         </span>
                         
                     </form>
+                </div>
+                <div id="social-network">
+                    <a class="navWhite"><img src="./css/images/svg/gitHub.svg"></a>
+                    <a class="navWhite"><img src="./css/images/svg/linkdin.svg"></a>
+                    <a class="navWhite"><img src="./css/images/svg/facebook.svg"></a>
+                    <a class="navWhite"><img src="./css/images/svg/insta.svg"></a>
                 </div>
                 <footer>
                     <p>2020 &#169; Yann.B développeur web 974. Tous droits réservés</p>
