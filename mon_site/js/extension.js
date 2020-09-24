@@ -1335,10 +1335,10 @@
                 m = 0;
     
             // Check if we exceeded the snap threshold
-            if ( Math.abs(x - this.absStartX) < this.snapThresholdX &&
+            /*if ( Math.abs(x - this.absStartX) < this.snapThresholdX &&
                 Math.abs(y - this.absStartY) < this.snapThresholdY ) {
                 return this.currentPage;
-            }
+            }*/
     
             if ( x > 0 ) {
                 x = 0;
