@@ -959,7 +959,7 @@
                 eventType(target, 'mouseup', this);
             }
     
-            if ( utils.hasPointer && !this.options.disablePointer ) {
+            /*if ( utils.hasPointer && !this.options.disablePointer ) {
                 eventType(this.wrapper, utils.prefixPointerEvent('pointerdown'), this);
                 eventType(target, utils.prefixPointerEvent('pointermove'), this);
                 eventType(target, utils.prefixPointerEvent('pointercancel'), this);
@@ -971,7 +971,7 @@
                 eventType(target, 'touchmove', this);
                 eventType(target, 'touchcancel', this);
                 eventType(target, 'touchend', this);
-            }
+            }*/
     
             eventType(this.scroller, 'transitionend', this);
             eventType(this.scroller, 'webkitTransitionEnd', this);
@@ -992,7 +992,7 @@
                 y = +matrix.top.replace(/[^-\d.]/g, '');
             }
     
-            //return { x: x, y: y };
+            return { x: x, y: y };
         },
         _initIndicators: function () {
             var interactive = this.options.interactiveScrollbars,
