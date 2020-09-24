@@ -776,7 +776,7 @@
             this._events[type].push(fn);
         },
     
-        /*off: function (type, fn) {
+        off: function (type, fn) {
             if ( !this._events[type] ) {
                 return;
             }
@@ -786,7 +786,7 @@
             if ( index > -1 ) {
                 this._events[type].splice(index, 1);
             }
-        },*/
+        },
     
         _execEvent: function (type) {
             if ( !this._events[type] ) {
