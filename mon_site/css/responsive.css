@@ -406,9 +406,9 @@ nav ul li{
 /*************************************************************/
 
 #hardSkills{
-    height: 275vh;
+    height: 280vh;
     margin: 0;
-    padding-top: 0;
+    padding-top: 5vh;
     flex-direction: column;
     justify-content: flex-start;
 }
@@ -476,7 +476,7 @@ nav ul li{
 /**********************************************************/
 
 #softSkills{
-    height: 180vh;
+    height: 150vh;
     width: 100vw;
     margin: 0;
     align-items: center;
@@ -498,7 +498,7 @@ nav ul li{
 #hobbys{
     /*min-height: 60vh;*/
     height: auto;
-    margin-bottom: 5vh;
+    /*margin-bottom: 5vh;*/
     width: 85vw;
 }
 #hobbys-in{
