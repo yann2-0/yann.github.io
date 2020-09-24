@@ -561,6 +561,7 @@ nav ul li{
 /*********************************************************************************/
 #contact{
     height: 145vh;
+    pointer-events: none;
 }
 #contact-block{
     height: 140vh;
