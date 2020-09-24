@@ -225,7 +225,7 @@
                     return ( k = k - 1 ) * k * ( ( b + 1 ) * k + b ) + 1;
                 }
             },
-            /*bounce: {
+            bounce: {
                 style: '',
                 fn: function (k) {
                     if ( ( k /= 1 ) < ( 1 / 2.75 ) ) {
@@ -238,7 +238,7 @@
                         return 7.5625 * ( k -= ( 2.625 / 2.75 ) ) * k + 0.984375;
                     }
                 }
-            },*/
+            },
             elastic: {
                 style: '',
                 fn: function (k) {
@@ -312,7 +312,7 @@
             directionLockThreshold: 5,
             momentum: true,
     
-            bounce: true,
+            bounce: false,
             bounceTime: 600,
             bounceEasing: '',
     
