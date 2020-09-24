@@ -1487,11 +1487,11 @@
                 activeAnimation = false;
             }
 
-            /*if(isReallyTouch(e)){
+            if(isReallyTouch(e)){
                 var touchEvents = getEventsPage(e);
                 touchStartY = touchEvents.y;
                 touchStartX = touchEvents.x;
-            }*/
+            }
         }
 
         /**
