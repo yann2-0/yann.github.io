@@ -406,7 +406,7 @@ nav ul li{
 /*************************************************************/
 
 #hardSkills{
-    height: 265vh;
+    height: 275vh;
     margin: 0;
     padding-top: 0;
     flex-direction: column;
@@ -476,7 +476,7 @@ nav ul li{
 /**********************************************************/
 
 #softSkills{
-    height: 265vh;
+    height: 180vh;
     width: 100vw;
     margin: 0;
     align-items: center;
