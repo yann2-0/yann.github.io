@@ -1459,9 +1459,9 @@
                     //is the movement greater than the minimum resistance to scroll?
                     if (Math.abs(touchStartY - touchEndY) > (window.innerHeight / 100 * options.touchSensitivity)) {
                         if (touchStartY > touchEndY) {
-                            //scrolling('down');
+                            scrolling('down');
                         } else if (touchEndY > touchStartY) {
-                            //scrolling('up');
+                            scrolling('up');
                         }
                     }
                 }
@@ -1484,7 +1484,7 @@
 
             //stopping the auto scroll to adjust to a section
             if(options.fitToSection){
-                activeAnimation = false;
+                activeAnimation = true;
             }
 
             if(isReallyTouch(e)){
