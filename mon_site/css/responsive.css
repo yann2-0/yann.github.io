@@ -605,7 +605,7 @@ button[type=reset] img{
     margin-left: -0.6vh;
 }
 #social-network{
-    top: 105vh;
+    top: 98vh;
     width: 70vw;
     height: 35vh;
     left: 15vw;
@@ -624,6 +624,7 @@ footer{
 }
 footer p{
     color: aliceblue;
+    margin-top: 1vh;
 }
 }
 
