@@ -915,7 +915,7 @@
     
     /* REPLACE START: _translate */
     
-                this.scrollerStyle[utils.style.transform] = 'translate(' + x + 'px,' + y + 'px)' + this.translateZ;
+                this.scrollerStyle[utils.style.transform] = 'translate(' + x + 'px,' + y+ 'px)' + this.translateZ;
     
     /* REPLACE END: _translate */
     
@@ -930,11 +930,11 @@
             this.y = y;
     
     
-        if ( this.indicators ) {
+        /*if ( this.indicators ) {
             for ( var i = this.indicators.length; i--; ) {
                 this.indicators[i].updatePosition();
             }
-        }
+        }*/
     
     
     // INSERT POINT: _translate
@@ -1335,10 +1335,10 @@
                 m = 0;
     
             // Check if we exceeded the snap threshold
-            /*if ( Math.abs(x - this.absStartX) < this.snapThresholdX &&
+            if ( Math.abs(x - this.absStartX) < this.snapThresholdX &&
                 Math.abs(y - this.absStartY) < this.snapThresholdY ) {
                 return this.currentPage;
-            }*/
+            }
     
             if ( x > 0 ) {
                 x = 0;
