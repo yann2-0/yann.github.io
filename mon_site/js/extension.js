@@ -968,9 +968,9 @@
     
             if ( utils.hasTouch && !this.options.disableTouch ) {
                 eventType(this.wrapper, 'touchstart', this);
-                //eventType(target, 'touchmove', this);
-                //eventType(target, 'touchcancel', this);
-                //eventType(target, 'touchend', this);
+                eventType(target, 'touchmove', this);
+                eventType(target, 'touchcancel', this);
+                eventType(target, 'touchend', this);
             }
     
             eventType(this.scroller, 'transitionend', this);
