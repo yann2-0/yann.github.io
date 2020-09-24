@@ -930,11 +930,11 @@
             this.y = y;
     
     
-        /*if ( this.indicators ) {
+        if ( this.indicators ) {
             for ( var i = this.indicators.length; i--; ) {
                 this.indicators[i].updatePosition();
             }
-        }*/
+        }
     
     
     // INSERT POINT: _translate
@@ -992,7 +992,7 @@
                 y = +matrix.top.replace(/[^-\d.]/g, '');
             }
     
-            return { x: x, y: y };
+            //return { x: x, y: y };
         },
         _initIndicators: function () {
             var interactive = this.options.interactiveScrollbars,
