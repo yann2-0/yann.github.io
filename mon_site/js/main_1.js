@@ -2026,7 +2026,7 @@
             removeClass(siblings(v.element), COMPLETELY);
             lazyLoadOthers();
 
-            canScroll = false;
+            canScroll = true;
 
             if(isFunction(v.callback)){
                 v.callback();
