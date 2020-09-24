@@ -1484,14 +1484,14 @@
 
             //stopping the auto scroll to adjust to a section
             if(options.fitToSection){
-                activeAnimation = true;
+                activeAnimation = false;
             }
 
-            if(isReallyTouch(e)){
+            /*if(isReallyTouch(e)){
                 var touchEvents = getEventsPage(e);
                 touchStartY = touchEvents.y;
                 touchStartX = touchEvents.x;
-            }
+            }*/
         }
 
         /**
