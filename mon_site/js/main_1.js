@@ -1990,12 +1990,12 @@
                 return;
             }
 
-            if (v.isMovementUp) {
+            /*if (v.isMovementUp) {
                 before($(SECTION_SEL)[0], v.wrapAroundElements);
             }
             else {
                 after($(SECTION_SEL)[$(SECTION_SEL).length-1], v.wrapAroundElements);
-            }
+            }*/
 
             silentScroll($(SECTION_ACTIVE_SEL)[0].offsetTop);
 
