@@ -5,9 +5,22 @@ var sidebarBody = document.querySelector('#hamburger-sidebar-body');
 var sidebar = document.querySelector('#hamburger-sidebar');
 var button = document.querySelector('#hamburger-button');
 var overlay = document.querySelector('#hamburger-overlay');
+var responsiveBtn_nav = document.querySelectorAll('.responsiveBtn_nav');
 var activatedClass = 'hamburger-activated';
 
-sidebarBody.innerHTML = content.innerHTML;
+//sidebarBody.innerHTML = content.innerHTML;
+
+//console.log(responsiveBtn_nav.length);
+for(i = 0; i < responsiveBtn_nav.length; i++){
+    responsiveBtn_nav[i].onclick = function(){
+        //setTimeout(function(){
+            this.parentNode.classList.remove(activatedClass);
+            setTimeout(function(){
+            sidebar.style.display = "none";
+            overlay.style.display = "none";
+        },200);
+    }
+}
 
 button.addEventListener('click', function(e){
     e.preventDefault()
