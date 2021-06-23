@@ -102,19 +102,19 @@ prevScrollpos = currentScrollPos;
 }
 
 acceuilNav.onclick = function(){
-    blackNav_click(nav_li[0], nav_li[2], nav_li[1], nav_li[3]);
+    blackNav_scroll(nav_li[0], nav_li[2], nav_li[1], nav_li[3]);
 }
 
 skillsNav.onclick = function(){
-    whiteNav_click(nav_li[1], nav_li[3], nav_li[0], nav_li[2]);
+    whiteNav_scroll(nav_li[1], nav_li[3], nav_li[0], nav_li[2]);
 }
 
 profilNav.onclick = function(){
-    blackNav_click(nav_li[2], nav_li[0], nav_li[1], nav_li[3]);
+    blackNav_scroll(nav_li[2], nav_li[0], nav_li[1], nav_li[3]);
 }
 
 contactNav.onclick = function(){
-    whiteNav_click(nav_li[3], nav_li[1], nav_li[0], nav_li[2]);
+    whiteNav_scroll(nav_li[3], nav_li[1], nav_li[0], nav_li[2]);
 }
 
 function blackNav_click(item1, item2, item3, item4){
@@ -279,36 +279,35 @@ window.onload = function(){
         ordi.classList.add('block_2out_mobile');
     }
     load();
-    
-    function load(){
+}
+function load(){
         
-        ordi.style.display = 'block';
-        titre.style.display = 'block';
-        button1.style.display = 'block';
-        icon_scroll.style.display = 'block';
-        setTimeout(function(){
-            document.getElementById('titre2').style.visibility ='visible';
-            animateH2();
-            titre1.classList.remove('block_1out');
-            ordi.classList.remove('block_2out');
-            ordi.classList.remove('block_2out_mobile');
-            titre.classList.remove('block_2out');
-            button1.classList.remove('block_2out');
-            animNav_glob();
-            
-            var nextIcon = document.getElementsByClassName('fp-next')[0];
-            var prevIcon = document.getElementsByClassName('fp-prev')[0];
-            
-            nextIcon.onclick = function(){
-                whiteNav_click(nav_li[1], nav_li[3], nav_li[0], nav_li[2]);
-            }
-            
-            prevIcon.onclick = function(){
-                whiteNav_click(nav_li[1], nav_li[3], nav_li[0], nav_li[2]);
-            }
-            
-        },3700)
-    }
+    ordi.style.display = 'block';
+    titre.style.display = 'block';
+    button1.style.display = 'block';
+    icon_scroll.style.display = 'block';
+    setTimeout(function(){
+        document.getElementById('titre2').style.visibility ='visible';
+        animateH2();
+        titre1.classList.remove('block_1out');
+        ordi.classList.remove('block_2out');
+        ordi.classList.remove('block_2out_mobile');
+        titre.classList.remove('block_2out');
+        button1.classList.remove('block_2out');
+        animNav_glob();
+        
+        var nextIcon = document.getElementsByClassName('fp-next')[0];
+        var prevIcon = document.getElementsByClassName('fp-prev')[0];
+        
+        nextIcon.onclick = function(){
+            whiteNav_click(nav_li[1], nav_li[3], nav_li[0], nav_li[2]);
+        }
+        
+        prevIcon.onclick = function(){
+            whiteNav_click(nav_li[1], nav_li[3], nav_li[0], nav_li[2]);
+        }
+        
+    },3700)
 }
 function animNav_glob(){
     animNav(nav_li[0]);
@@ -318,9 +317,9 @@ function animNav_glob(){
                     animNav(nav_li[2])
                     setTimeout(function(){
                         animNav(nav_li[3])
-                    },500);
-                },500);
-            },500);
+                    },200);
+                },200);
+            },200);
 }
 function animNav(item){
     item.style.visibility='visible';
